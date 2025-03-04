@@ -5,8 +5,8 @@ volumes:
 services:
   mongo:
     volumes:
-      - mongo-data:/mnt/data/db
+      - mongo-data:	/mnt/.ix-apps/docker/volumes/data/_data/data/db
 
   redis:
     volumes:
-      - redis-data:/mnt/data
+      - redis-data:	/mnt/.ix-apps/docker/volumes/data/_data/data
