@@ -102,7 +102,7 @@ services:
         container_name: mongo
         command: '--replSet overleaf'
         volumes:
-            - /mnt/mongo_data:/data/db
+            - /mnt/mongo_data: /mnt/.ix-apps/docker/volumes/data/_data/data/db
             - ./server-ce/mongodb-init-replica-set.js:/docker-entrypoint-initdb.d/mongodb-init-replica-set.js
         environment:
           MONGO_INITDB_DATABASE: sharelatex
