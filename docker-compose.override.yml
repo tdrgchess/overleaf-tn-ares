@@ -1,0 +1,12 @@
+volumes:
+  mongo-data:
+  redis-data:
+
+services:
+  mongo:
+    volumes:
+      - mongo-data:/mnt/data/db
+
+  redis:
+    volumes:
+      - redis-data:/mnt/data
